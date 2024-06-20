@@ -1,0 +1,121 @@
+.frame-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #140090;
+    width: 100%;
+    height: 100%;
+  }
+  .connector-icon,
+  .frame-item {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .frame-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .connector-icon {
+    align-self: stretch;
+    position: relative;
+    object-fit: contain;
+    margin-top: -1px;
+    z-index: 2;
+  }
+  .quanhack,
+  .yamini {
+    position: relative;
+    font-weight: 300;
+    z-index: 2;
+  }
+  .yamini {
+    width: 154px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .quanhack-parent,
+  .yamini-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  .yamini-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 9px;
+    color: #fc05c6;
+  }
+  .quanhack-parent {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .ellipse-group,
+  .frame-wrapper {
+    width: 324px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 60px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .ellipse-group {
+    position: absolute;
+    top: 60px;
+    left: 61px;
+    width: 397px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 249.9px 19px 11px 16px;
+    gap: 16px;
+  }
+  .ellipse-parent {
+    height: 479px;
+    width: 521px;
+    position: relative;
+    max-width: 100%;
+  }
+  .message {
+    width: 100%;
+    height: 1024px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 224px 20px 321px 21px;
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-17xl);
+    color: #25fb02;
+    font-family: var(--font-average);
+  }
+  @media screen and (max-width: 767px) {
+    .quanhack,
+    .yamini {
+      font-size: var(--font-size-10xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .quanhack,
+    .yamini {
+      font-size: var(--font-size-3xl);
+    }
+  }
